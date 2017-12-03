@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<package name="default" extends="struts-default">
+<action name="gohome">
+<result>index.jsp</result>
+</action>
+
+<action name="findCustomer">
+<result>searchCustomer.jsp</result>
+</action>
+
+
+<action name="searchCustomer" class="com.siva.RegisterAction" method = "searchCustomer">
+<result name="success">register-success.jsp</result>
+<result name="error">register-error.jsp</result>
+</action>
+
+
+<action name="insertCustomerForm">
+<result>insertCustomer.jsp</result>
+</action>
+
+
+<action name="insertCustomer" class="com.siva.RegisterAction" method = "insertCustomer">
+<result name="success">register-success.jsp</result>
+<result name="error">register-error.jsp</result>
+</action>
+
+
+<action name="updateCustomerForm">
+<result>searchCustomer.jsp</result>
+</action>
+<action name="updateCustomer" class="com.siva.RegisterAction" method = "updateCustomer">
+<result name="success">register-success.jsp</result>
+<result name="error">register-error.jsp</result>
+</action>
+
+<action name="deleteCustomer" class="com.siva.RegisterAction" method = "deleteCustomer">
+<result name="success">register-success.jsp</result>
+<result name="error">register-error.jsp</result>
+</action>
+</package>
+</struts>    
